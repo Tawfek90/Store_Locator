@@ -1,0 +1,195 @@
+.navbar {
+  height: 104px;
+}
+.navbar .navbar_container {
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-gap: 46px;
+}
+.navbar .navbar_container .bars {
+  display: none;
+  z-index: 500;
+}
+.navbar .navbar_container .logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.navbar .navbar_container .logo img {
+  width: 24px;
+  height: 24px;
+}
+.navbar .navbar_container .logo p {
+  width: 89px;
+  height: 19px;
+  margin-left: 5px;
+  font-family: SF Pro;
+}
+.navbar .navbar_container .showList {
+  display: none;
+}
+.navbar .navbar_container .list {
+  display: none;
+}
+.navbar .navbar_container .search {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 0 1rem;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+.navbar .navbar_container .search input {
+  height: 54px;
+  outline: none;
+  border: none;
+}
+.navbar .navbar_container .search .icon svg {
+  font-size: 22px;
+  color: #2d2f87;
+  cursor: pointer;
+}
+.navbar .navbar_container .icons {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar .navbar_container .icons p {
+  color: #2d2f87;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+}
+
+.input_container {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .navbar .navbar_container {
+    position: relative;
+  }
+  .navbar .navbar_container .logo {
+    display: none;
+  }
+  .navbar .navbar_container .search {
+    display: none;
+  }
+  .navbar .navbar_container .bars {
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+  .navbar .navbar_container .bars svg {
+    font-size: 24px;
+  }
+  .navbar .navbar_container .icons {
+    position: absolute;
+    right: 0;
+    width: 73px;
+  }
+  .navbar .navbar_container .icons p {
+    display: none;
+  }
+  .navbar .navbar_container .icons svg {
+    font-size: 24px;
+    position: relative;
+  }
+  .navbar .navbar_container .showList {
+    display: block;
+    transform: translateX(0%);
+    list-style: none;
+    z-index: 200;
+    text-transform: capitalize;
+    height: 800px;
+    background: #f7f7f7;
+    left: -34px;
+    padding-left: 7%;
+    width: 110%;
+    position: absolute;
+    top: 0;
+    padding-top: 19%;
+  }
+  .navbar .navbar_container .showList li:nth-child(1) {
+    padding-top: 2rem;
+  }
+  .navbar .navbar_container .showList li {
+    padding: 0.5em 0;
+    cursor: pointer;
+  }
+  .navbar .navbar_container .showList li .logo {
+    display: flex;
+  }
+  .navbar .navbar_container .showList li.arabic {
+    color: #2d2f87;
+    font-family: "Cairo", sans-serif;
+    font-weight: bold;
+  }
+  .navbar .navbar_container .showList li.active {
+    color: #c7c708;
+  }
+  .input_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 0 1em;
+    border: 1px solid #ddd;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 2rem;
+  }
+  .input_container .search_input {
+    height: 40px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+  }
+}
+@media (min-width: 250px) {
+  .navbar .navbar_container .showList {
+    padding-left: 14%;
+    width: 200px;
+  }
+  .navbar .navbar_container .showList li:nth-child(1) {
+    padding-top: 3rem;
+  }
+}
+@media (min-width: 316px) {
+  .navbar .navbar_container .showList {
+    padding-left: 14%;
+    width: 250px;
+  }
+}
+@media (min-width: 316px) {
+  .navbar .navbar_container .showList {
+    padding-left: 14%;
+  }
+  .navbar .navbar_container .showList li:nth-child(1) {
+    padding-top: 1.5rem;
+  }
+}
+@media (min-width: 440px) {
+  .navbar .navbar_container .showList {
+    padding-left: 9%;
+  }
+  .navbar .navbar_container .showList li:nth-child(1) {
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 500px) {
+  .navbar .navbar_container .showList {
+    padding-left: 9%;
+  }
+  .navbar .navbar_container .showList li:nth-child(1) {
+    padding-top: 0;
+  }
+}/*# sourceMappingURL=navbar.css.map */

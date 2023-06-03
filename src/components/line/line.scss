@@ -1,0 +1,52 @@
+.line {
+  height: 20px;
+  .line_container {
+    width: 95%;
+    height: 100%;
+
+    position: relative;
+    margin-left: auto;
+    .first {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .second {
+      width: 41%;
+      border-bottom: 3px solid #2d2f7d;
+      position: absolute;
+      top: 0;
+      z-index: 5;
+    }
+  }
+}
+//media
+@media (min-width: 650px) {
+  .line {
+    .line_container {
+      .second {
+        width: 34%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .line {
+    .line_container {
+      .second {
+        width: 24%;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .line {
+    .line_container {
+      .second {
+        width: 20%;
+      }
+    }
+  }
+}

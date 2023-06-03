@@ -1,0 +1,63 @@
+.footer {
+  margin-top: 1.5em;
+}
+.footer hr {
+  opacity: 0.4;
+}
+.footer .footer_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+  text-transform: capitalize;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em 1.5em;
+}
+.footer .footer_container .list {
+  list-style: none;
+}
+.footer .footer_container .list h5 {
+  font-size: 16px;
+  color: #2e2e2e;
+}
+.footer .footer_container .list li {
+  cursor: pointer;
+  color: #2e2e2e;
+  opacity: 0.9;
+}
+.footer .conclusion {
+  font-size: 12px;
+  text-align: center;
+  color: #2e2e2e;
+}
+
+@media (min-width: 500px) {
+  .footer .footer_container {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .footer .footer_container .list h5 {
+    font-size: 22px;
+  }
+  .footer .footer_container .list li {
+    cursor: pointer;
+  }
+  .footer .footer_container .about {
+    margin-left: 13%;
+  }
+}
+@media (min-width: 600px) {
+  .footer .footer_container {
+    padding: 1.5em 5%;
+  }
+  .footer .footer_container .list h5 {
+    font-size: 22px;
+  }
+  .footer .footer_container .list li {
+    cursor: pointer;
+  }
+  .footer .footer_container .about {
+    margin-left: 13%;
+  }
+}/*# sourceMappingURL=footer.css.map */

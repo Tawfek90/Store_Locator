@@ -1,0 +1,12 @@
+.friday {
+  height: 40px;
+  background-color: #2d2f87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.friday p {
+  color: #fff;
+  font-family: Readex Pro, Regular;
+  font-size: 14px;
+}/*# sourceMappingURL=whiteFriday.css.map */

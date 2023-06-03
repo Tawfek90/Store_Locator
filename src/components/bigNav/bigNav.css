@@ -1,0 +1,25 @@
+.bignav {
+  background: #121212;
+  color: #fff;
+}
+.bignav .bignav_container {
+  width: 89%;
+  margin: 0 auto;
+}
+.bignav .bignav_container .list {
+  list-style: none;
+  display: flex;
+  height: 45px;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: capitalize;
+}
+.bignav .bignav_container .list li.active {
+  color: #ffd800;
+}
+
+@media (max-width: 700px) {
+  .bignav {
+    display: none;
+  }
+}/*# sourceMappingURL=bigNav.css.map */

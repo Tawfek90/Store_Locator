@@ -1,0 +1,23 @@
+.crocs .crocs_container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.crocs .crocs_container img {
+  width: 45%;
+}
+
+@media (max-width: 500px) {
+  .crocs .crocs_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .crocs .crocs_container img {
+    width: 100%;
+  }
+  .crocs .crocs_container img + img {
+    margin-top: 1em;
+  }
+}/*# sourceMappingURL=crocs.css.map */
